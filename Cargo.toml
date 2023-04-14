@@ -20,7 +20,7 @@ std = ["parking"]
 portable-atomic = ["portable-atomic-util", "portable_atomic_crate"]
 
 [dependencies]
-parking = { version = "2.0.0", optional = true }
+parking = { git = "https://github.com/Lochlanna/parking.git", branch="parking_lot", optional = true }
 portable-atomic-util = { version = "0.1.1", default-features = false, optional = true, features = ["alloc"] }
 
 [dependencies.portable_atomic_crate]
